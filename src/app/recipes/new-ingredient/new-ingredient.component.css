@@ -1,0 +1,63 @@
+.header{
+  color: black;
+  font-size: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.new-ingredient {
+  padding: 2rem 0;
+}
+
+.new-ingredient form {
+  background: indianred;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px 100px 20px 100px;
+
+  padding: 2rem;
+}
+
+.new-ingredient form label {
+  color: whitesmoke;
+  font-weight: bold;
+  margin: 0 0 1rem;
+  font-size: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.new-ingredient form .input {
+  border: none;
+  height: 40px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.button {
+  background-color: whitesmoke;
+  margin: 5px;
+  width: 200px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  border-style: none;
+}
+
+.new-ingredient form .textarea {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 20px;
+}
