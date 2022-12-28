@@ -1,3 +1,7 @@
+.container{
+  margin: 20px 100px 20px 100px;
+}
+
 .header{
   color: black;
   font-size: 35px;
@@ -5,6 +9,7 @@
   text-align: center;
   background-color: whitesmoke;
   padding: 15px;
+  border-radius: 14px;
 }
 
 .new-ingredient {
@@ -53,6 +58,11 @@
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   border-style: none;
+}
+
+.button:hover{
+  background-color:lightgray;
+  cursor: pointer
 }
 
 .new-ingredient form .textarea {

@@ -1,0 +1,35 @@
+.container{
+  margin: 20px 100px 20px 100px;
+}
+
+.header{
+  color: black;
+  font-size: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 14px;
+}
+
+.button {
+  background-color: whitesmoke;
+  margin: 5px;
+  width: 400px;
+  padding: 25px;
+  font-size: 30px;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  border-style: none;  
+}
+
+.button:hover{
+  background-color:lightgray;
+  cursor: pointer
+}
+
+div{
+  padding: 65px;
+  text-align: center;
+}
