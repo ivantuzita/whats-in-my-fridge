@@ -1,6 +1,6 @@
 # WhatsInMyFridge
 
-What recipes can you cook with the ingredients left in your fridge? - An Angular 14 studying project.
+What recipes can you cook with the ingredients left in your fridge? - An Angular 15 studying project.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
