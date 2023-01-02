@@ -1,5 +1,7 @@
 main{
-  background: url(../assets/background.jpg);
+  background: url(../assets/background2.svg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  min-height: 500px;
 }

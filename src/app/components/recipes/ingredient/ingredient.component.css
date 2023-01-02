@@ -1,0 +1,49 @@
+.ingredient {
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 23px;
+  box-shadow: 8px 8px 0px rgb(150, 43, 43);
+}
+
+.ingredient-g {
+  width: 556px;
+}
+
+.ingredient-p {
+  width: 300px;
+}
+
+img {
+  width: 70px;
+}
+
+.button {
+  background-color: whitesmoke;
+  margin: 12px;
+  width: auto;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  border-style: none;  
+  box-shadow: 2px 2px 0px rgb(150, 43, 43);
+  
+}
+
+.button:hover{
+  background-color:lightgray;
+  cursor: pointer
+}
+
+.tiny{
+  width: 30px;
+}
+
+.right{
+  text-align: right;
+}

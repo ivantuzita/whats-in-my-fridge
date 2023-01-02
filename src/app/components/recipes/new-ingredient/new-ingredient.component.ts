@@ -1,3 +1,4 @@
+import { Ingredient } from './../ingredient/ingredient';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewIngredientComponent implements OnInit{
 
-  ingredient = {
+  ingredient: Ingredient = {
     id: 0,
     content: '',
-    quantity: null
+    quantity: 0
   }
 
   constructor(){

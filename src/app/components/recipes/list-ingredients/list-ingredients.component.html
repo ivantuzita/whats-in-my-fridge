@@ -10,4 +10,15 @@
       What can I make today?
     </button>
   </div>
+  <div class="ingredient_board" *ngIf="ingredientList.length > 0, else noIngredients">
+    <div *ngFor="let ingredient of ingredientList">
+      <app-ingredient [ingredient]="ingredient"></app-ingredient>
+    </div>
+  </div>
 </section>
+
+<ng-template #noIngredients>
+  <div class="header">
+    <p>No ingredients yet... Why not register one? I'm ready to cook!</p>
+  </div>
+</ng-template>

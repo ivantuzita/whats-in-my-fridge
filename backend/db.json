@@ -1,0 +1,9 @@
+{
+  "ingredients": [
+    {
+      "id": 1,
+      "content": "this is a test!",
+      "quantity": 3
+    }
+  ]
+}
