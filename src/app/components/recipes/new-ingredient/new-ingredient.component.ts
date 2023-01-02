@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { IngredientService } from './../ingredient.service';
 import { Ingredient } from './../ingredient/ingredient';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,10 +13,13 @@ export class NewIngredientComponent implements OnInit{
   ingredient: Ingredient = {
     id: 0,
     content: '',
-    quantity: 0
+    quantity: undefined
   }
 
-  constructor(){
+  constructor(
+    private service: IngredientService,
+    private router: Router
+    ){
 
   }
 
@@ -23,6 +28,8 @@ export class NewIngredientComponent implements OnInit{
   }
 
   createIngredient() {
-    alert("hey, it's working fine.")
+    this.service.create(this.ingredient).subscribe(() =>{
+      this.router.navigate(['/listIngredients'])
+    })
   }
 }

@@ -1,3 +1,4 @@
+import { IngredientService } from './../ingredient.service';
 import { Ingredient } from './../ingredient/ingredient';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,7 +11,14 @@ export class ListIngredientsComponent implements OnInit{
 
   ingredientList: Ingredient[] = [];
 
-  ngOnInit(): void {
-    
+  constructor(private service: IngredientService){
+
   }
+
+  ngOnInit(): void {
+    this.service.list().subscribe((ingredientList) =>{
+      this.ingredientList = ingredientList;
+    })
+  }
+
 }

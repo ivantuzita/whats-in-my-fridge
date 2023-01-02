@@ -23,6 +23,7 @@
   font-weight: normal;
   border-style: none;  
   box-shadow: 8px 8px 0px rgb(150, 43, 43);
+  text-align: right;
 }
 
 .button:hover{
@@ -31,6 +32,6 @@
 }
 
 div{
-  padding: 65px;
+  padding: 30px;
   text-align: center;
 }
