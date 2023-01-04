@@ -28,8 +28,11 @@ export class NewIngredientComponent implements OnInit{
   }
 
   createIngredient() {
-    this.service.create(this.ingredient).subscribe(() =>{
-      this.router.navigate(['/listIngredients'])
-    })
+    //checking that you can't save without typing info
+    if(this.ingredient.content != '' && this.ingredient.quantity != undefined){
+      this.service.create(this.ingredient).subscribe(() =>{
+        this.router.navigate(['/listIngredients'])
+      })
+    }
   }
 }

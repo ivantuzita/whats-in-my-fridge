@@ -9,6 +9,7 @@ import { ListIngredientsComponent } from './components/recipes/list-ingredients/
 import { IngredientComponent } from './components/recipes/ingredient/ingredient.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DeleteIngredientComponent } from './components/recipes/delete-ingredient/delete-ingredient.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     NewIngredientComponent,
     ListIngredientsComponent,
-    IngredientComponent
+    IngredientComponent,
+    DeleteIngredientComponent
   ],
   imports: [
     BrowserModule,

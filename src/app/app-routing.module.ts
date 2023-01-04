@@ -1,3 +1,4 @@
+import { DeleteIngredientComponent } from './components/recipes/delete-ingredient/delete-ingredient.component';
 import { ListIngredientsComponent } from './components/recipes/list-ingredients/list-ingredients.component';
 import { NewIngredientComponent } from './components/recipes/new-ingredient/new-ingredient.component';
 import {NgModule} from '@angular/core';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'listIngredients',
     component: ListIngredientsComponent
+  },
+  {
+    path: 'ingredients/deleteIngredient/:id',
+    component: DeleteIngredientComponent
   }
 ];
 

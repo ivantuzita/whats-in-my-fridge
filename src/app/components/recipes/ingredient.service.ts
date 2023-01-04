@@ -19,4 +19,14 @@ export class IngredientService {
     return this.http.post<Ingredient>(this.API, ingredient)
   }
 
+  delete(id: number): Observable<Ingredient> {
+    const url = `${this.API}/${id}`
+    return this.http.delete<Ingredient>(url)
+  }
+
+  getById(id: number): Observable<Ingredient> {
+    const url = `${this.API}/${id}`
+    return this.http.get<Ingredient>(url)
+  }
+
 }
