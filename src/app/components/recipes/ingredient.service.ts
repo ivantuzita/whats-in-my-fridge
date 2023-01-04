@@ -19,6 +19,11 @@ export class IngredientService {
     return this.http.post<Ingredient>(this.API, ingredient)
   }
 
+  edit(ingredient: Ingredient): Observable<Ingredient> {
+    const url = `${this.API}/${ingredient.id}`
+    return this.http.put<Ingredient>(url, ingredient)
+  }
+
   delete(id: number): Observable<Ingredient> {
     const url = `${this.API}/${id}`
     return this.http.delete<Ingredient>(url)

@@ -3,7 +3,7 @@
   <p><b>Ingredient: </b>{{ ingredient.content }}</p>
   <p><b>Quantity: </b>{{ ingredient.quantity }}</p>
   <div class="right">
-    <button class="button"><img class="tiny" src="../../../../assets/botao-editar.png"></button>
+    <button class="button" routerLink="/ingredients/editIngredient/{{ingredient.id}}"><img class="tiny" src="../../../../assets/botao-editar.png"></button>
     <button class="button" routerLink="/ingredients/deleteIngredient/{{ingredient.id}}"><img class="tiny" src="../../../../assets/excluir.png"></button>
   </div>
 </div>

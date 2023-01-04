@@ -1,0 +1,31 @@
+<section class="edit-ingredient container">
+  <header class="header">
+    <h2>Editing ingredient "{{ingredient.content}}"...</h2>
+  </header>
+  <form>
+    <label for="ingredient">New ingredient:</label>
+    <input
+      type="textarea"
+      class="input"
+      id="ingredientName"
+      name="ingredientName"
+      placeholder="Type a new ingredient (tomato, onion, celery):"
+      [(ngModel)]="ingredient.content">
+    <label for="ingredient">Type quantity:</label>
+    <input
+      type="textarea"
+      class="input"
+      id="ingredientQuant"
+      name="ingredientQuant"
+      placeholder="How many of that ingredient is there on the fridge? (2, 5, 10):"
+      [(ngModel)]="ingredient.quantity">
+    <div class="right">
+      <button (click)="editIngredient()" class="button">
+        Save ingredient!
+      </button>
+      <button (click)="cancel()" class="button">
+        Nevermind...
+      </button>
+    </div>
+  </form>
+</section>

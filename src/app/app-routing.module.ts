@@ -1,3 +1,4 @@
+import { EditIngredientComponent } from './components/recipes/edit-ingredient/edit-ingredient.component';
 import { DeleteIngredientComponent } from './components/recipes/delete-ingredient/delete-ingredient.component';
 import { ListIngredientsComponent } from './components/recipes/list-ingredients/list-ingredients.component';
 import { NewIngredientComponent } from './components/recipes/new-ingredient/new-ingredient.component';
@@ -21,6 +22,11 @@ const routes: Routes = [
   {
     path: 'ingredients/deleteIngredient/:id',
     component: DeleteIngredientComponent
+  }
+  ,
+  {
+    path: 'ingredients/editIngredient/:id',
+    component: EditIngredientComponent
   }
 ];
 
