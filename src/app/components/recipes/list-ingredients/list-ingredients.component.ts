@@ -16,6 +16,7 @@ export class ListIngredientsComponent implements OnInit{
   }
 
   ngOnInit(): void {
+    console.log(this.ingredientList)
     this.service.list().subscribe((ingredientList) =>{
       this.ingredientList = ingredientList;
     })
