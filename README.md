@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-First, enter the `backend` folder using `cd backend`. Then, type `npm start` to start the 'fake' backend to make HTTP requests.
+First, you need to run the API located at [FridgeAPI](https://github.com/ivantuzita/FridgeAPI).
 
 Then, run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
