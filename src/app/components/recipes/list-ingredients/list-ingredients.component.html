@@ -10,8 +10,8 @@
       What can I make today?
     </button>
   </div>
-  <div class="ingredient_board" *ngIf="ingredientList.length > 0, else noIngredients">
-    <div *ngFor="let ingredient of ingredientList">
+  <div *ngIf="ingredientList.length > 0, else noIngredients">
+    <div class="ingredient_board" *ngFor="let ingredient of ingredientList">
       <app-ingredient [ingredient]="ingredient"></app-ingredient>
     </div>
   </div>

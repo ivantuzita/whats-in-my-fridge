@@ -12,6 +12,10 @@
   border-radius: 14px;
 }
 
+.ingredient_board{
+  display: inline-block;
+}
+
 .button {
   background-color: whitesmoke;
   margin: 12px;

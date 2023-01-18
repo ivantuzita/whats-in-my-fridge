@@ -8,7 +8,7 @@ import {Observable} from 'rxjs'
 })
 export class IngredientService {
 
-  private readonly API = 'https://localhost:7172/Fridge'
+  private readonly API = 'https://localhost:5001/Fridge'
   constructor(private http: HttpClient) { }
 
   list(): Observable<Ingredient[]>{
