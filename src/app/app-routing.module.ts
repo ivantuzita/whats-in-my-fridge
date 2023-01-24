@@ -1,3 +1,4 @@
+import { ListRecipesComponent } from './components/recipes/list-recipes/list-recipes.component';
 import { EditIngredientComponent } from './components/recipes/edit-ingredient/edit-ingredient.component';
 import { DeleteIngredientComponent } from './components/recipes/delete-ingredient/delete-ingredient.component';
 import { ListIngredientsComponent } from './components/recipes/list-ingredients/list-ingredients.component';
@@ -20,10 +21,13 @@ const routes: Routes = [
     component: ListIngredientsComponent
   },
   {
+    path: 'listRecipes',
+    component: ListRecipesComponent
+  },
+  {
     path: 'ingredients/deleteIngredient/:id',
     component: DeleteIngredientComponent
-  }
-  ,
+  },
   {
     path: 'ingredients/editIngredient/:id',
     component: EditIngredientComponent

@@ -1,0 +1,24 @@
+<section class="container">
+  <header class="header">
+    <h2>These are your recipes!</h2>
+  </header>
+  <div>
+    <button routerLink="/listIngredients" class="button">
+      What do I have in my fridge?
+    </button>
+    <button routerLink="/listRecipes" class="button">
+      I've got a new recipe!
+    </button>
+  </div>
+  <div>
+    <div class="ingredient_board">
+      <app-recipe></app-recipe>
+    </div>
+  </div>
+</section>
+
+<ng-template #noIngredients>
+  <div class="no-ingredients">
+    <p>No ingredients yet... Why not register one? I'm ready to cook!</p>
+  </div>
+</ng-template>
